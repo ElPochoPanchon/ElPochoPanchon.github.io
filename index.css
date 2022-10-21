@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+}
+body{
+    width: 1440px;
+    height: 100vh;
+    background: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 576px;  
+    height: 432px;
+    background:hsl(0, 0%, 100%);
+    border-radius: 10px;
+    position: relative;
+}
+.container .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 288px;
+}
+.container .texto{
+    position: absolute;
+    width: 288px;
+    right: 0;
+    padding: 30px;
+    top: 0;
+}
+.container .texto h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+}
+.container .texto h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-top: 20px;
+    color: hsl(212, 21%, 14%);
+    line-height: 35px;
+}
+.container .texto p{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color:hsl(228, 12%, 48%);
+    margin-top: 20px;
+    line-height: 20px;
+}
+.container .texto .price{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.container .texto .price .actual{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+}
+.container .texto .price .old{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color:hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+.container .texto button{
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 40px;
+}
+.container .texto button h6{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 10px
+}
+.container .texto button:active{
+    background-color: hsl(158, 50%, 22%);
+    cursor: pointer;
+}
